@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 7</title>
+</head>
+<body>
+    <script>
+        let flim=["Falimy","Premalu","Aavesham","Manjummel Boys","Kannur squad","Neru","Garudan","Abraham Ozlar"];
+        document.write("<br>Flims in the list :",flim);
+        document.write("<br><br>Favorite Flim :",flim[6]);
+        flim.push("Antony");
+        document.write("<br><br>After pushing flim Antony")
+        document.write("<br><br>Flims in the list :",flim);
+        flim.pop();
+        document.write("<br><br>After popping one flim")
+        document.write("<br><br>Flims in the list :",flim);
+        delete(flim[1]);
+        document.write("<br><br>After deleting least fav flim");
+        document.write("<br><br>Flims in the list :",flim);
+        let subflim1=flim.slice(2,6);
+        document.write("<br><br>Sub list of flims :",subflim1)
+        document.write("<br><br> Position of Flim selected : ",flim.indexOf("Neru")+1)
+    </script>
+</body>
+</html>
